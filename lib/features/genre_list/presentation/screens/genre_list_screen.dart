@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:music_app/shared/widgets/screen_widget.dart';
 
 class GenreListScreen extends StatelessWidget {
   static const routeName = "/genre-list";
@@ -7,6 +8,12 @@ class GenreListScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return ScreenWidget(
+      isLoading: false,
+      title: "Lista de Genêros",
+      error: "Erro ao carregar lista de genêros",
+      onTryAgain: () {},
+      child: Container(),
+    );
   }
 }
