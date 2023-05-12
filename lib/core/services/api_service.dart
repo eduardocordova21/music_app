@@ -52,4 +52,5 @@ class ApiService extends DioForNative {
           error: error, stackTrace: stackTrace);
       throw GeneralException();
     }
+  }
 }
